@@ -36,7 +36,7 @@ def session():
 
 Base = declarative_base(bind=engine)
 
-# Entity Item
+# Entity User
 class Users(Base):
     __tablename__ = "users"
     # __table_args__ = {"autoload": True}
@@ -101,7 +101,7 @@ def update_user(id: int, request: UsersRequest, db: Session = Depends(session)):
 
 
 @app.delete("/user/{id}")
-def delete_item(id: int, db: Session = Depends(session)):
+def delete_user(id: int, db: Session = Depends(session)):
     db.query(Users).filter(Users.id == id).delete()
     db.commit()
     response_body = jsonable_encoder({"user_id": id, "msg": "record deleted"})
