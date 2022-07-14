@@ -25,7 +25,7 @@ Add those values into a `.env` file similar to the one provided in `.env.example
 
 ### Create Fake User Data
 
-Import the `.dbc` file under '/data/create_faker_data.dbc' into your Databricks workspace and run the notebook. This will create a Delta table for `users` under the a dataabase `fastapi`.
+Import the `.dbc` file under '/data/create_faker_data.dbc' into your Databricks workspace and run the notebook. This will create a Delta table for `users` under the a database `fastapi`.
 
 ## Run FastAPI
 
@@ -33,7 +33,7 @@ In the parent folder of this repo run the below command to start the FastAPI ser
 
 `uvicorn app.main:app --reload`
 
-And you're all set! You now have a FastAPI running on a Lakehouse
+And you're all set! You now have a FastAPI running on a Lakehouse.
 
 ## Acknowledgements
 
