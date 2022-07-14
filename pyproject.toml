@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fastapi-lakehouse"
+version = "0.1.0"
+description = "connect fastapi to a databricks lakehouse"
+authors = ["Steve Russo <64294847+sjrusso8@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.78.0"
+uvicorn = {extras = ["standard"], version = "^0.18.2"}
+pydantic = "^1.9.1"
+SQLAlchemy = "^1.4.39"
+databricks-sql-connector = "^2.0.2"
+sqlalchemy-databricks = "^0.2.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+ipykernel = "^6.15.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
