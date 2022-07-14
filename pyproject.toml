@@ -10,7 +10,6 @@ fastapi = "^0.78.0"
 uvicorn = {extras = ["standard"], version = "^0.18.2"}
 pydantic = "^1.9.1"
 SQLAlchemy = "^1.4.39"
-databricks-sql-connector = "^2.0.2"
 sqlalchemy-databricks = "^0.2.0"
 
 [tool.poetry.dev-dependencies]
